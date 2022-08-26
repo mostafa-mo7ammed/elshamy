@@ -1,0 +1,492 @@
+*{
+  scroll-behavior: smooth;
+}
+
+/* start media */
+
+@font-face {
+  font-family: cairo;
+  src: url(Cairo.ttf);
+}
+
+@media screen and (max-width: 1200px) { .menu { width: 100%; } }
+@media screen and (min-width: 1200px) { .menu { width: 30%; } }
+
+/* end media */
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #E7E7E7;
+  color: gray;
+  direction: rtl;
+  font-family: cairo;
+  overflow-x: hidden;
+  width :100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  zoom: -50;
+  font-size: 17px;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+ul{
+  list-style: none;
+}
+
+table{
+  font-size: 17px;
+}
+
+/* start header */
+
+.section-1 {
+  background-color: #007573;
+  padding-right: 20px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+.section-1 a{
+  padding: 0;
+  margin: 0;
+  animation-name: header;
+  animation-duration: 2s;
+  animation-fill-mode: all;
+  animation-timing-function: ease;
+}
+
+.section-1 img {
+  width: 200px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  animation-name: header;
+  animation-duration: 2s;
+  animation-fill-mode: all;
+  animation-timing-function: ease;
+}
+
+@keyframes header{
+  0%{
+    transform: translateX(100%);
+    zoom: -100%;
+    opacity: 0%;
+  }
+  100%{
+    transform: translateX(0);
+    zoom: 0;
+    opacity: 100%;
+  }
+}
+
+/* end header */
+
+/* start intro */
+
+.section-2 {
+  margin-top: 50px;
+  padding-top: 50vw;
+  text-align: center;
+  justify-self: center;
+  height: 100vw;
+  background-image: url(intro.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+.section-2 .contener-logo img{
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 90vw;
+  animation-name: intro;
+  animation-duration: 2s;
+  animation-fill-mode: all;
+  animation-timing-function: ease;
+}
+
+.section-2 .contener-1{
+  padding-top: 20px;
+  animation-name: intro;
+  animation-duration: 2s;
+  animation-fill-mode: all;
+  animation-timing-function: ease;
+}
+
+.section-2 .contener-1 .submit{
+  font-family: cairo;
+  background-color: #007573;
+  border: none;
+  width: 50px;
+  height: 33px;
+  color: white;
+}
+
+.section-2 .contener-1 .searsh {
+  border: #007573 solid ;
+  height: 33px;
+  width: 70vw;
+  font-family: cairo;
+}
+
+.section-2 .contener-2{
+  margin-top: 30px;
+  text-align: center;
+  justify-self: center;
+  position: sticky;
+}
+
+.section-2 .contener-2 a{
+  display: inline-block;
+  position: sticky;
+  z-index: 2;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 10px 7vw;
+  color: white;
+  border-bottom: solid 2px #007573;
+  transition: .5s all ease;
+  animation-name: intro;
+  animation-duration: 2s;
+  animation-fill-mode: all;
+  animation-timing-function: ease;
+}
+
+.section-2 .contener-2 a:hover:active{
+  transform: translate(0,30%);
+}
+
+.section-2 .contener-3 {
+  width: 50px;
+  padding: 5px 0;
+  background-color: #007E7B; 
+  border-radius: 15px 0 0 15px;
+  zoom: -10%;
+  position: fixed;
+  bottom: 70px;
+  animation-name: intro;
+  animation-duration: 2s;
+  animation-fill-mode: all;
+  animation-timing-function: ease;
+}
+
+.section-2 .contener-3 .contener-4{
+  border: white solid 3px ;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+  margin-right: 5px;
+}
+.section-2 .contener-3 .contener-4 .contener-5{
+  margin-top: 3.5px;
+  margin-right: 2.5px;
+  width : 12px;
+  height: 12px;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+  transform: rotate(-45deg);
+}
+
+@keyframes intro{
+  0%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 100%;
+  }
+}
+
+/* end intro */
+
+/* start introduction */
+
+.section-3 {
+  padding: 10px 10px 40px;
+  position: static;
+  overflow: hidden;
+}
+
+.section-3 .contener-1 p span{
+  margin: 15px;
+}
+
+.section-3 .contener-1 p::first-line{
+  margin-right: 10vw;
+  
+}
+
+.section-3 .animation {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-right: black 5px solid;
+  border-bottom: black 5px solid;
+  margin-right: 45vw;
+  transform: rotate(45deg);
+  position: relative;
+  animation-name: animation-down;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+ @keyframes animation-down{
+   0%{
+     transform: translate(0,0);
+     transform: rotate(90deg);
+     border: darkred 5px solid;
+     border-radius: 50%;
+   }
+   50%{
+     transform: translate(0,100%);
+     border: seagreen 5px solid;
+     border-radius: 0;
+     transform: rotate(45deg);
+   }
+   100%{
+     transform: translate(0,0);
+     border: seagreen 5px solid;
+     border-radius: 50% 50% 50% 0;
+     transform: rotate(45deg);
+     transform: rotateZ(-45deg);
+   }
+ }
+ 
+ .section-3 .contener-2 a{
+   padding: 5px 10vw;
+   margin-right: 34%;
+   margin-top: 15px;
+   text-align: center;
+   display: inline-block;
+   background-color: seagreen;
+   color: white;
+   border: 3px seagreen solid;
+   transition: .5s all ease;
+/*   transition: .5s all ease;
+   animation-name: subscribe;
+   animation-duration: 1.5s;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-direction: alternate; */
+ }
+ /*
+ @keyframes subscribe{
+   to{
+     border-radius: 20px;
+   }
+ }
+ */
+ .section-3 .contener-2 a:hover:active{
+   background-color: transparent;
+   border-radius: 20px;
+   color: seagreen;
+ }
+ /* end introduction */
+
+/* start time table */
+
+.section3 .contener-3 {
+  padding: 10vw;
+  
+}
+ .title{
+  position: static;
+  padding-right: 5px;
+  border-right: #007E7B solid 5px;
+}
+
+.section-3 .contener-3 table{
+  background-color: #007E7B;
+  height: 100%;
+  height:100%;
+  overflow-x: scroll;
+  z-index: 0;
+  font-size: 2vw;
+}
+
+.section-3 .contener-3 table tr td{
+  background-color: white;
+  text-align: center;
+  width: 10%;
+}
+
+.section-3 .contener-4 p{
+  color: red;
+}
+
+.section-3 .contener-4 a{
+  color : green;
+}
+/* end time table */
+
+/* start youtube */
+
+.section-3 .contener-5 {
+  display: inline-block;
+  
+}
+
+.section-3 .contener-5 p ,
+.section-3 .contener-5 a{
+  display: inline;
+  vertical-align: middle;
+}
+
+.section-3 .contener-5 img{
+  width: 100px;
+  
+}
+
+/* start mostafa elshamy id */
+
+.section-3 .contener-5 .definition{
+  width: 100%;
+}
+
+.section-3 .contener-5 .definition img {
+  padding: 0;
+  width: 200px;
+  position: sticky;
+  left: 0;
+  border-radius: 20px 0 20px 0;
+  border: 5px solid #007E7B ;
+}
+
+/* end mostafa elshamy id */
+
+/* start subscribe */
+
+.section-3 .contener-6 img{
+  width: 200px;
+  position: relative;
+  right: 0;
+  left: 0;
+  top: 27px;
+}
+
+.section-3 .contener-6 .contener-1{
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+.section-3 .contener-6 .contener-1 a {
+  padding: 5px 20px;
+  margin: 5px 40px;
+  text-align :center;
+  vertical-align: middle;
+  color: white;
+  width: 100px;
+  height: 30px;
+  position: relative;
+}
+.section-3 .contener-6 .contener-1 .telegram {
+  display: inline-block;
+  height: 35px;
+  border: 3px #0058B2 solid;
+  background-color: #0058B2;
+  transition: .5s all ease;
+}
+
+.section-3 .contener-6 .contener-1 .telegram:hover:active{
+  background-color: transparent;
+  border-radius: 20px;
+  color: #0058B2;
+}
+.section-3 .contener-6 .contener-1 .whatsapp{
+  display: inline-block;
+  height: 30px;
+  border: 3px #00B258 solid;
+  background-color: #00B258;
+  transition: .5s all ease;
+}
+
+.section-3 .contener-6 .contener-1 .whatsapp:hover:active{
+  background-color: transparent;
+  border-radius: 20px;
+  color: #00B258;
+}
+  
+
+/* end subscribe */
+
+/* end youtube */
+
+
+.section-4 {
+background-color: #007E7B; 
+position: relative;
+bottom: 0;
+margin-bottom: -17px;
+}
+
+.section-4 a ,
+.section-4 h3{
+  color: #E7E7E7;
+}
+
+.section-4 .contener-1 {
+  padding: 10px;
+}
+.section-4 .contener-1 ul{
+  list-style: outside;
+  color: #E7E7E7;
+}
+
+.section-4 .copyright{
+  direction: ltr;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.section-4 .copyright p{
+  color: white;
+  vertical-align: middle;
+}
+.section-4 .copyright img{
+  width: 80px;
+  position: relative;
+  top: 7px;
+}
+/* start footer*/
+
+footer{
+  padding: 5px;
+  text-align: center;
+  display: block;
+  border-top: grey solid 2px ;
+  background-color: #DDDDDD;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+footer a{
+  cursor: auto;
+  display: block;
+}
+
+/* end footer */
