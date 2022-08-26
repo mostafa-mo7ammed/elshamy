@@ -67,6 +67,14 @@ table{
   animation-timing-function: ease;
 }
 
+.section-1 h2{
+  text-align: center;
+  animation-name: header;
+  animation-duration: 2s;
+  animation-fill-mode: all;
+  animation-timing-function: ease;
+}
+
 .section-1 img {
   width: 200px;
   padding-bottom: 0px;
